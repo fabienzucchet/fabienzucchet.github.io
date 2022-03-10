@@ -21,6 +21,16 @@ body {
     flex-direction: column;
 }
 
+/*
+ * Hide some contents when the screen is too small.
+ */
+
+@media only screen and (max-width: 900px) {
+    #header-buttons-container {
+        display: none;
+    }
+}
+
 /* 
  * Define text formatting classes to change easily the text style.
  */
