@@ -1,0 +1,76 @@
+/*
+ * This file contains the styles for the common layout (navbar, ...).
+ */
+
+:root {
+    /* Define a color palette. */
+    --regular: #2C4251;
+    --primary: #C8EAF4;
+    --secondary: #2E0E02;
+}
+
+body {
+    /* Set default styles for all elements. */
+    font-family: 'Open Sans', sans-serif;
+    color: var(--regular);
+
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+ * Define text formatting classes to change easily the text style.
+ */
+
+.bold-text {
+    font-weight: bold;
+}
+
+.secondary-text {
+    color: var(--secondary);
+}
+
+/*
+ * Display elements from the footer.
+ */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    height: 60px;
+
+    font-size: 1.5rem;
+}
+
+.header-button {
+    padding: 20px 10px;
+}
+
+#name-header-button {
+    /* Add a greater padding on the border of the element.*/
+    padding: 5px 20px;
+
+    background-color: var(--primary);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#header-buttons-container {
+    /* Add a greater padding on the border of the element.*/
+    padding: 5px 20px;
+}
+
+/*
+ * Apply styles to all pages.
+ */
+
+.page-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
