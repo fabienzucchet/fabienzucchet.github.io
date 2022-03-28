@@ -9,6 +9,10 @@
     --secondary: #2E0E02;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* Set default styles for all elements. */
     font-family: 'Open Sans', sans-serif;
@@ -31,7 +35,7 @@ body {
     }
 }
 
-/* 
+/*
  * Define text formatting classes to change easily the text style.
  */
 
@@ -47,14 +51,19 @@ body {
  * Display elements from the footer.
  */
 #header {
+    position: fixed;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
 
     height: 60px;
+    width: 100%;
 
     font-size: 1.5rem;
+
+    background-color: #FFF;
 }
 
 .header-button {
@@ -75,6 +84,10 @@ body {
     padding: 5px 20px;
 }
 
+#body-container {
+    overflow-y: auto;
+}
+
 /*
  * Apply styles to all pages.
  */
@@ -83,4 +96,40 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+
+    min-height: 80vh;
+    margin: 60px 0;
+}
+
+.page-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    flex: 1;
+}
+
+/*
+ * Customise the links.
+ */
+
+ .link {
+    color: var(--secondary);
+    text-decoration: none;
+ }
+
+/*
+ * Define color themes for pages.
+ */
+
+.light-theme {
+    background-color: #FFF;
+    color: var(--regular);
+}
+
+.dark-theme {
+    background-color: var(--primary);
+    color: var(--regular);
 }

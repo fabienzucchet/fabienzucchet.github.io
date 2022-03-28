@@ -2,16 +2,6 @@
  * This file contains the styles for the Home page.
  */
 
-.page-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
-    flex: 1;
-}
-
 /*
  * Handle the me picture.
  */
